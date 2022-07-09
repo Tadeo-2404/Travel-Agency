@@ -1,0 +1,19 @@
+extends ./layout/index
+
+block contenido
+    div(class="pt-36 flex flex-col p-8 w-full")
+        form(action="#" class="w-full bg-indigo-100 p-8 flex flex-col justify-center gap-y-5") 
+            legend(class="text-center text-4xl") Contact Us
+            fieldset(class="flex flex-col gap-y-2 justify-center") 
+               label(class="uppercase" for="name") Name 
+               input(class="p-3 border-none outline-none" type="text" id="name" placeholder="Your Name") 
+            fieldset(class="flex flex-col gap-y-2 justify-center") 
+               label(class="uppercase" for="email") Email 
+               input(class="p-3 border-none outline-none" type="text" id="email" placeholder="Your Email") 
+            fieldset(class="flex flex-col gap-y-2 justify-center") 
+               label(class="uppercase" for="number") Number
+               input(class="p-3 border-none outline-none" type="tel" id="number" placeholder="Your Phone Number") 
+            fieldset(class="flex flex-col gap-y-2 justify-center") 
+               label(class="uppercase" for="message") Message
+               textarea#message(name="message", cols="30", rows="10") 
+            input(type="submit" value="Send" class="p-4 uppercase bg-red-600 text-white w-full")
